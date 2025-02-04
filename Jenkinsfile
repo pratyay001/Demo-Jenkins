@@ -4,7 +4,11 @@ pipeline {
 
     parameters {
         string(name: 'VERSION', defaultValue: '1.0.0', description: 'Enter the application version')
-        text(name: 'SELECTED_MARKETS', defaultValue: '', description: 'Selected markets from checkboxes')
+        extendedChoice(name: 'SELECTED_VALUES', 
+                       type: 'PT_CHECKBOX', 
+                       multiSelectDelimiter: ',', 
+                       value: 'Option1,Option2,Option3,Option4', 
+                       description: 'Select multiple options')
        
     }
 
