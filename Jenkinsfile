@@ -5,18 +5,7 @@ pipeline {
     parameters {
         string(name: 'VERSION', defaultValue: '1.0.0', description: 'Enter the application version')
 
-        choice(name: 'MARKET', choices: [
-            'US', 
-            'UK', 
-            'Germany', 
-            'France', 
-            'India', 
-            'China', 
-            'Brazil', 
-            'Japan', 
-            'Australia', 
-            'Canada'
-        ], description: 'Select the Market for Deployment')
+       
     }
 
     stages {
