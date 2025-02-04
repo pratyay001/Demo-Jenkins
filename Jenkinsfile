@@ -4,7 +4,7 @@ pipeline {
 
     parameters {
         string(name: 'VERSION', defaultValue: '1.0.0', description: 'Enter the application version')
-
+         text(name: 'SELECTED_MARKETS', defaultValue: 'US,UK', description: 'Auto-filled with selected markets')
        
     }
 
@@ -17,8 +17,8 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo "Deploying to ${params.MARKET} Market..."
-                sh "python3 demoPython.py ${params.VERSION} ${params.MARKET}"
+                echo "Deploying to ${params.SELECTED_MARKETS} Market..."
+                sh "python3 demoPython.py ${params.VERSION} ${params.SELECTED_MARKETS}"
             }
         }
     }
