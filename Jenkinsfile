@@ -4,11 +4,11 @@ pipeline {
 
     parameters {
         string(name: 'VERSION', defaultValue: '1.0.0', description: 'Enter the application version')
-        extendedChoice(name: 'SELECTED_VALUES', 
-                       type: 'PT_CHECKBOX', 
-                       multiSelectDelimiter: ',', 
-                       value: 'Option1,Option2,Option3,Option4', 
-                       description: 'Select multiple options')
+        // extendedChoice(name: 'SELECTED_VALUES', 
+        //                type: 'PT_CHECKBOX', 
+        //                multiSelectDelimiter: ',', 
+        //                value: 'Option1,Option2,Option3,Option4', 
+        //                description: 'Select multiple options')
        
     }
 
