@@ -21,7 +21,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo "Deploying to ${params.SELECTED_MARKETS} Market..."
+                echo "Deploying to ${params.SELECTED_VALUES} Market..."
                 sh "python3 demoPython.py ${params.VERSION} ${params.SELECTED_MARKETS}"
             }
         }
