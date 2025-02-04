@@ -29,7 +29,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "Deploying to ${params.MARKET} Market..."
-                sh "python3 script.py ${params.VERSION} ${params.MARKET}"
+                sh "python3 demoPython.py ${params.VERSION} ${params.MARKET}"
             }
         }
     }
