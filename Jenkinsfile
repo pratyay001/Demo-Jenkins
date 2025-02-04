@@ -4,7 +4,7 @@ pipeline {
 
     parameters {
         string(name: 'VERSION', defaultValue: '1.0.0', description: 'Enter the application version')
-         text(name: 'SELECTED_MARKETS', defaultValue: 'US,UK', description: 'Auto-filled with selected markets')
+         text(name: 'SELECTED_MARKETS', defaultValue: 'Germany', description: 'Auto-filled with selected markets')
        
     }
 
